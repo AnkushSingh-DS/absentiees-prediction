@@ -89,7 +89,8 @@ with st.container():
     st.markdown('<hr style="border-top: 2px solid #; margin: 30px auto; margin-bottom: 45px; width: 80%;">', unsafe_allow_html=True)
 
     # Add the Month Value input field
-    month_value = st.slider('Month Value', 1, 12, 6)
+    st.markdown('<p class="input-label"><b>Month</b></p>', unsafe_allow_html=True)
+    month_value = st.slider('', 1, 12, 6)
 
     st.markdown('<p class="input-label"><b>Transportation Expense</b></p>', unsafe_allow_html=True)
     transportation_expense = st.slider('', 100, 200, 150, key='transportation_expense', help="input-field")
